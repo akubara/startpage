@@ -1,0 +1,12 @@
+{
+  "mount": {
+    "public": { "url": "/", "static": true },
+    "src": { "url": "/dist" }
+  },
+  "routes": [{ "match": "routes", "src": ".*", "dest": "/index.html" }],
+  "alias": {
+    "react": "preact/compat",
+    "react-dom": "preact/compat"
+  },
+  "plugins": ["@prefresh/snowpack"]
+}
