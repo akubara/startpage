@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@prefresh/snowpack": "^3.1.0",
+    "@snowpack/plugin-postcss": "^1.1.0",
     "eslint": "^7.20.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-preact": "^1.1.3",

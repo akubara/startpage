@@ -8,5 +8,5 @@
     "react": "preact/compat",
     "react-dom": "preact/compat"
   },
-  "plugins": ["@prefresh/snowpack"]
+  "plugins": ["@prefresh/snowpack", "@snowpack/plugin-postcss"]
 }
