@@ -1,8 +1,15 @@
 import { h, render } from 'preact';
-
-import './index.css';
+import { StoreContext } from 'storeon/preact';
 
 import 'preact/devtools';
-import App from './App';
 
-render(<App />, document.getElementById('root'));
+import './index.css';
+import App from './App';
+import store from './store';
+
+render(
+  <StoreContext.Provider value={store}>
+    <App />
+  </StoreContext.Provider>,
+  document.getElementById('root'),
+);
