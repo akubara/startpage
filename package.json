@@ -28,6 +28,7 @@
     "stylelint-config-standard": "^20.0.0"
   },
   "dependencies": {
+    "@storeon/localstorage": "^1.2.0",
     "preact": "^10.5.12",
     "storeon": "^3.1.4",
     "tailwindcss": "^2.0.3",
