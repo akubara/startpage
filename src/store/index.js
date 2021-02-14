@@ -1,9 +1,8 @@
+import { persistState } from '@storeon/localstorage';
 import { createStoreon } from 'storeon';
 
-import { persistState } from '@storeon/localstorage';
+import main from './main';
 
-import projects from './projects';
-
-const store = createStoreon([persistState([projects])]);
+const store = createStoreon([main, persistState(['main'])]);
 
 export default store;
