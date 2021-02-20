@@ -1,0 +1,8 @@
+.nav {
+  @apply max-w-full md:max-w-3xl;
+  @apply w-min flex mx-auto overflow-x-auto;
+}
+
+.nav .navlink {
+  @apply p-4 min-w-max;
+}
