@@ -30,6 +30,7 @@
   "dependencies": {
     "@storeon/localstorage": "^1.2.0",
     "preact": "^10.5.12",
+    "react-icons": "^4.2.0",
     "storeon": "^3.1.4",
     "tailwindcss": "^2.0.3",
     "wouter-preact": "^2.7.3"
