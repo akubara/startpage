@@ -9,7 +9,7 @@ export default function Form({ dispatchKey, payloadPattern, placeholder, mini, m
   const [value, setValue] = useState('');
   const { dispatch } = useStoreon();
 
-  const onHandle = useCallback((e) => {
+  const onChange = useCallback((e) => {
     setValue(e.target.value);
   }, []);
 
@@ -20,8 +20,8 @@ export default function Form({ dispatchKey, payloadPattern, placeholder, mini, m
   };
 
   return (
-    <form onSubmit={onSubmit} className={`flex py-3 ${mini ? 'mini-form' : ''}`}>
-      <Input value={value} onChange={onHandle} placeholder={placeholder} max={max} />
+    <form onSubmit={onSubmit} className={`form ${mini ? 'mini-form' : ''}`}>
+      <Input value={value} onChange={onChange} placeholder={placeholder} max={max} />
       <button type="submit" className="form-button">
         <GrAdd />
       </button>

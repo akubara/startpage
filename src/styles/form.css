@@ -1,0 +1,7 @@
+.form {
+  @apply flex py-3;
+}
+
+.mini-form {
+  max-width: 150px;
+}
