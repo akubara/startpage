@@ -1,6 +1,4 @@
-import getDifferenceBetweenArrays from '../utils/getDifferenceBetweenArrays';
-
-export default function tags(store) {
+export default function main(store) {
   store.on('@init', () => ({
     tags: ['all'],
     sites: [
@@ -10,28 +8,31 @@ export default function tags(store) {
         tag: 'kek',
       },
     ],
-    undo: { tagsDiff: [], siteDiff: [] },
+    undo: { tags: [], sites: [] },
   }));
 
-  store.on('tags/add', ({ tags }, tag) => ({
-    tags: [...new Set(tags.concat([tag.toLowerCase().trim()]))],
-  }));
+  store.on('tags/add', ({ tags }, tag) => {
+    const formatedTag = tag.toLowerCase().trim();
+    if (formatedTag) {
+      return { tags: [...new Set(tags.concat([formatedTag]))] };
+    }
+    return { tags };
+  });
 
   store.on('tags/del', ({ tags, sites }, tag) => {
     const newTags = tags.filter((item) => item !== tag);
     const newSites = sites.filter((site) => site.tag !== tag);
 
-    const tagsDiff = getDifferenceBetweenArrays(tags, newTags);
-    const siteDiff = getDifferenceBetweenArrays(sites, newSites, 'url');
-
-    return { tags: newTags, sites: newSites, undo: { tagsDiff, siteDiff } };
+    return { tags: newTags, sites: newSites, undo: { tags, sites } };
   });
 
   store.on('sites/add', ({ sites }, { url, tag, name }) => {
-    const isUnique = !sites.some((site) => site.url === url);
-    if (isUnique) {
+    const transformedUrl = (url.match('^http') ? url : `https://${url}`).toLowerCase().trim();
+    const hasDomain = transformedUrl.match(/\.[A-Za-zА-Яа-я]+$/gi);
+    const isUnique = !sites.some((site) => site.url === transformedUrl);
+    if (isUnique && hasDomain) {
       return {
-        sites: sites.concat([{ url: url.toLowerCase().trim(), tag, name: name || url }]),
+        sites: sites.concat([{ url: transformedUrl, tag, name: name || url }]),
       };
     }
     return sites;
@@ -42,12 +43,8 @@ export default function tags(store) {
     return { sites: newSites };
   });
 
-  store.on('undo', ({ undo, sites, tags }) => {
-    const { siteDiff, tagsDiff } = undo;
-    return {
-      sites: [...sites, ...siteDiff],
-      tags: [...tags, ...tagsDiff],
-      undo: { tagsDiff: [], siteDiff: [] },
-    };
+  store.on('undo', ({ undo }) => {
+    const { sites, tags } = undo;
+    return { sites, tags, undo: {} };
   });
 }
