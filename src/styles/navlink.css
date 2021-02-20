@@ -1,0 +1,8 @@
+.navlink {
+  @apply hover:text-pink-400;
+  @apply text-gray-400;
+}
+
+.active-navlink {
+  @apply text-pink-500;
+}
