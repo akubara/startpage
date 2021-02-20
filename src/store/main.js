@@ -1,13 +1,9 @@
+import { initTags, initSites } from './init';
+
 export default function main(store) {
   store.on('@init', () => ({
-    tags: ['all'],
-    sites: [
-      {
-        url: 'https://vk.com/',
-        name: 'vk',
-        tag: 'kek',
-      },
-    ],
+    tags: [...initTags],
+    sites: [...initSites],
     undo: { tags: [], sites: [] },
   }));
 
@@ -26,13 +22,13 @@ export default function main(store) {
     return { tags: newTags, sites: newSites, undo: { tags, sites } };
   });
 
-  store.on('sites/add', ({ sites }, { url, tag, name }) => {
+  store.on('sites/add', ({ sites }, { url, tag }) => {
     const transformedUrl = (url.match('^http') ? url : `https://${url}`).toLowerCase().trim();
     const hasDomain = transformedUrl.match(/\.[A-Za-zА-Яа-я]+$/gi);
     const isUnique = !sites.some((site) => site.url === transformedUrl);
     if (isUnique && hasDomain) {
       return {
-        sites: sites.concat([{ url: transformedUrl, tag, name: name || url }]),
+        sites: sites.concat([{ url: transformedUrl, tag }]),
       };
     }
     return sites;
