@@ -413,7 +413,7 @@
       ]
     },
     "dist/hooks/useHashRouter.js": {
-      "bytes": 606,
+      "bytes": 621,
       "imports": [
         {
           "path": "_snowpack/pkg/preact.js",
@@ -598,7 +598,7 @@
           "bytesInOutput": 0
         },
         "dist/hooks/useHashRouter.js": {
-          "bytesInOutput": 260
+          "bytesInOutput": 264
         },
         "_snowpack/pkg/@storeon/localstorage.js": {
           "bytesInOutput": 558
@@ -619,7 +619,7 @@
           "bytesInOutput": 137
         }
       },
-      "bytes": 43675
+      "bytes": 43679
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
