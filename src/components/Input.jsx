@@ -1,7 +1,5 @@
 import { h } from 'preact';
 
-import '../styles/input.css';
-
 export default function Input({ value, onChange, placeholder, max }) {
   return (
     <input

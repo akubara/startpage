@@ -5,3 +5,18 @@
 .mini-form {
   max-width: 150px;
 }
+
+.styled-input {
+  @apply bg-gray-100 p-1.5 border border-gray-100 w-full min-w-0;
+  @apply focus:border-pink-400 focus:outline-none;
+}
+
+.styled-button {
+  @apply bg-gray-100 p-2 border border-gray-100;
+  @apply focus:outline-none focus:bg-gray-200;
+  @apply hover:bg-gray-200;
+}
+
+.styled-button:active {
+  @apply bg-gray-300;
+}

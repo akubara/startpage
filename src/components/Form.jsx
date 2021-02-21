@@ -24,7 +24,7 @@ export default function Form({ dispatchKey, payloadPattern, placeholder, mini, m
   return (
     <form onSubmit={onSubmit} className={`form ${mini ? 'mini-form' : ''}`}>
       <Input value={value} onChange={onChange} placeholder={placeholder} max={max} />
-      <button type="submit" className="form-button">
+      <button type="submit" className="styled-button">
         <GrAdd />
       </button>
     </form>
