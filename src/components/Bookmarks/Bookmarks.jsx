@@ -16,7 +16,12 @@ export default function Bookmarks({ tag }) {
     <div className="container">
       <TagContainer tag={decodedTag} />
       <div className="site-list-wrapper">
-        <Form dispatchKey="sites/add" placeholder="Site" payloadPattern={sitesAddPattern} />
+        <Form
+          dispatchKey="sites/add"
+          placeholder="Site"
+          payloadPattern={sitesAddPattern}
+          inputType="url"
+        />
         <SiteList tag={decodedTag} />
       </div>
     </div>

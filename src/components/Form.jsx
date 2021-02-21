@@ -7,7 +7,8 @@ import Input from './Input';
 
 import '../styles/form.css';
 
-export default function Form({ dispatchKey, payloadPattern, placeholder, mini, max = 256 }) {
+export default function Form(props) {
+  const { dispatchKey, payloadPattern, placeholder, mini, inputType, max = 256 } = props;
   const [value, setValue] = useState('');
   const { dispatch } = useStoreon();
 
@@ -23,7 +24,13 @@ export default function Form({ dispatchKey, payloadPattern, placeholder, mini, m
 
   return (
     <form onSubmit={onSubmit} className={`form ${mini ? 'mini-form' : ''}`}>
-      <Input value={value} onChange={onChange} placeholder={placeholder} max={max} />
+      <Input
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        max={max}
+        type={inputType}
+      />
       <button type="submit" className="styled-button">
         <GrAdd />
       </button>
