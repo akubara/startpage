@@ -129,7 +129,7 @@
       ]
     },
     "dist/components/Input.js": {
-      "bytes": 274,
+      "bytes": 281,
       "imports": [
         {
           "path": "_snowpack/pkg/preact.js",
@@ -142,7 +142,7 @@
       "imports": []
     },
     "dist/components/Form.js": {
-      "bytes": 997,
+      "bytes": 1052,
       "imports": [
         {
           "path": "_snowpack/pkg/preact.js",
@@ -279,7 +279,7 @@
       "imports": []
     },
     "dist/components/Bookmarks/Bookmarks.js": {
-      "bytes": 809,
+      "bytes": 831,
       "imports": [
         {
           "path": "_snowpack/pkg/preact.js",
@@ -399,6 +399,32 @@
         }
       ]
     },
+    "_snowpack/pkg/preact/hooks.js": {
+      "bytes": 148,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/hooks.module-c67397a1.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/preact.module-fd3c1bec.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/hooks/useHashRouter.js": {
+      "bytes": 606,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/preact/hooks.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
     "_snowpack/pkg/@storeon/localstorage.js": {
       "bytes": 1792,
       "imports": []
@@ -438,7 +464,7 @@
       ]
     },
     "dist/index.js": {
-      "bytes": 656,
+      "bytes": 733,
       "imports": [
         {
           "path": "_snowpack/env.js",
@@ -466,6 +492,10 @@
         },
         {
           "path": "dist/App.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/hooks/useHashRouter.js",
           "kind": "import-statement"
         },
         {
@@ -517,13 +547,13 @@
           "bytesInOutput": 1742
         },
         "dist/components/Input.js": {
-          "bytesInOutput": 156
+          "bytesInOutput": 165
         },
         "dist/styles/form.css": {
           "bytesInOutput": 0
         },
         "dist/components/Form.js": {
-          "bytesInOutput": 357
+          "bytesInOutput": 380
         },
         "dist/components/Bookmarks/useSelectSitesByTag.js": {
           "bytesInOutput": 128
@@ -544,7 +574,7 @@
           "bytesInOutput": 0
         },
         "dist/components/Bookmarks/Bookmarks.js": {
-          "bytesInOutput": 245
+          "bytesInOutput": 261
         },
         "dist/styles/navlink.css": {
           "bytesInOutput": 0
@@ -564,6 +594,12 @@
         "dist/App.js": {
           "bytesInOutput": 145
         },
+        "_snowpack/pkg/preact/hooks.js": {
+          "bytesInOutput": 0
+        },
+        "dist/hooks/useHashRouter.js": {
+          "bytesInOutput": 260
+        },
         "_snowpack/pkg/@storeon/localstorage.js": {
           "bytesInOutput": 558
         },
@@ -580,10 +616,10 @@
           "bytesInOutput": 43
         },
         "dist/index.js": {
-          "bytesInOutput": 129
+          "bytesInOutput": 137
         }
       },
-      "bytes": 43359
+      "bytes": 43675
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
