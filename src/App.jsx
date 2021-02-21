@@ -6,9 +6,12 @@ import Bookmarks from './components/Bookmarks/Bookmarks';
 import Header from './components/Header';
 import TagRoute from './components/TagRoute';
 
-function App() {
+export default function App() {
   return (
     <Fragment>
+      <Route path="~/">
+        <Redirect to="/all" />
+      </Route>
       <Route path="/">
         <Redirect to="/all" />
       </Route>
@@ -18,5 +21,3 @@ function App() {
     </Fragment>
   );
 }
-
-export default App;
