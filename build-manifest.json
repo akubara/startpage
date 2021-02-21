@@ -74,7 +74,7 @@
       "imports": []
     },
     "dist/styles/tailwind.css": {
-      "bytes": 11877,
+      "bytes": 11783,
       "imports": []
     },
     "_snowpack/pkg/react-toastify.js": {
@@ -353,15 +353,6 @@
         }
       ]
     },
-    "dist/components/Search.js": {
-      "bytes": 290,
-      "imports": [
-        {
-          "path": "_snowpack/pkg/preact.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
     "dist/components/TagRoute.js": {
       "bytes": 483,
       "imports": [
@@ -380,7 +371,7 @@
       ]
     },
     "dist/App.js": {
-      "bytes": 702,
+      "bytes": 755,
       "imports": [
         {
           "path": "_snowpack/pkg/preact.js",
@@ -400,10 +391,6 @@
         },
         {
           "path": "dist/components/Header.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "dist/components/Search.js",
           "kind": "import-statement"
         },
         {
@@ -575,7 +562,7 @@
           "bytesInOutput": 144
         },
         "dist/App.js": {
-          "bytesInOutput": 110
+          "bytesInOutput": 145
         },
         "_snowpack/pkg/@storeon/localstorage.js": {
           "bytesInOutput": 558
@@ -596,7 +583,7 @@
           "bytesInOutput": 129
         }
       },
-      "bytes": 43324
+      "bytes": 43359
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
@@ -605,7 +592,7 @@
           "bytesInOutput": 8069
         },
         "dist/styles/tailwind.css": {
-          "bytesInOutput": 4238
+          "bytesInOutput": 4175
         },
         "dist/styles/bookmarks.css": {
           "bytesInOutput": 1304
@@ -623,7 +610,7 @@
           "bytesInOutput": 62
         }
       },
-      "bytes": 15226
+      "bytes": 15163
     }
   }
 }
