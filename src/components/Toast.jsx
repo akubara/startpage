@@ -26,8 +26,8 @@ export default function Toast({ closeToast, deleteCallback }) {
   };
 
   return (
-    <button type="button" onClick={handleUndo} className="form-button">
-      Undo
+    <button type="button" onClick={handleUndo} className="styled-button">
+      Undo delete
     </button>
   );
 }
