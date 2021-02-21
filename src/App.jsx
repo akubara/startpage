@@ -1,18 +1,21 @@
-import { h } from 'preact';
-import { Link, Route } from 'wouter-preact';
+import { h, Fragment } from 'preact';
+import { ToastContainer } from 'react-toastify';
+import { Route, Redirect } from 'wouter-preact';
+
+import Bookmarks from './components/Bookmarks/Bookmarks';
+import Header from './components/Header';
+import TagRoute from './components/TagRoute';
 
 function App() {
   return (
-    <div>
-      <Link href="/users/1">
-        <a href="/user/1" className="link">
-          Profile
-        </a>
-      </Link>
-
-      <Route path="/about">About Us</Route>
-      <Route path="/users/:name">{(params) => <div>Hello, {params.name}!</div>}</Route>
-    </div>
+    <Fragment>
+      <Route path="/">
+        <Redirect to="/all" />
+      </Route>
+      <Header />
+      <TagRoute component={Bookmarks} />
+      <ToastContainer />
+    </Fragment>
   );
 }
 
