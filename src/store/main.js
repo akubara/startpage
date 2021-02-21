@@ -4,7 +4,6 @@ export default function main(store) {
   store.on('@init', () => ({
     tags: [...initTags],
     sites: [...initSites],
-    undo: { tags: [], sites: [] },
   }));
 
   store.on('tags/add', ({ tags }, tag) => {
@@ -19,7 +18,7 @@ export default function main(store) {
     const newTags = tags.filter((item) => item !== tag);
     const newSites = sites.filter((site) => site.tag !== tag);
 
-    return { tags: newTags, sites: newSites, undo: { tags, sites } };
+    return { tags: newTags, sites: newSites };
   });
 
   store.on('sites/add', ({ sites }, { url, tag }) => {
@@ -37,10 +36,5 @@ export default function main(store) {
   store.on('sites/del', ({ sites }, { url }) => {
     const newSites = sites.filter((site) => site.url !== url);
     return { sites: newSites };
-  });
-
-  store.on('undo', ({ undo }) => {
-    const { sites, tags } = undo;
-    return { sites, tags, undo: {} };
   });
 }

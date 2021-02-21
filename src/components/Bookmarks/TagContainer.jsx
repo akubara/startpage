@@ -1,11 +1,12 @@
 import { h } from 'preact';
-// import { HiTrash } from 'react-icons/hi';
 import { useCallback } from 'preact/compat';
 import { GrClose } from 'react-icons/gr';
+import { toast } from 'react-toastify';
 import { useStoreon } from 'storeon/preact';
 import { useLocation } from 'wouter-preact';
 
 import Form from '../Form';
+import Toast, { config } from '../Toast';
 
 const tagsAddPatern = (value) => value;
 
@@ -16,8 +17,11 @@ export default function TagContainer({ tag }) {
 
   const handleDel = useCallback(() => {
     dispatch('tags/del', tag);
-    dispatch('toast/show');
     setLocation('/all');
+  }, [tag]);
+
+  const handleToast = useCallback(() => {
+    toast(<Toast deleteCallback={handleDel} />, config);
   }, [tag]);
 
   return (
@@ -25,7 +29,7 @@ export default function TagContainer({ tag }) {
       <div className="flex items-center">
         <h1 className="tag-title">#{tag}</h1>
         {tag === 'all' ? null : (
-          <button type="button" onClick={handleDel} className="pl-2">
+          <button type="button" onClick={handleToast} className="pl-2">
             <GrClose size="20px" />
           </button>
         )}
