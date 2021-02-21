@@ -1,0 +1,614 @@
+{
+  "inputs": {
+    "_snowpack/pkg/common/preact.module-fd3c1bec.js": {
+      "bytes": 9881,
+      "imports": []
+    },
+    "_snowpack/pkg/preact.js": {
+      "bytes": 89,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/preact.module-fd3c1bec.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/common/hooks.module-c67397a1.js": {
+      "bytes": 2327,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/preact.module-fd3c1bec.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/common/compat.module-b89bd8f3.js": {
+      "bytes": 7969,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/hooks.module-c67397a1.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/preact.module-fd3c1bec.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/storeon/preact.js": {
+      "bytes": 866,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/hooks.module-c67397a1.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/preact.module-fd3c1bec.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/compat.module-b89bd8f3.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/react-toastify/dist/ReactToastify.css": {
+      "bytes": 10241,
+      "imports": []
+    },
+    "dist/styles/tailwind.css": {
+      "bytes": 11877,
+      "imports": []
+    },
+    "_snowpack/pkg/react-toastify.js": {
+      "bytes": 34972,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/compat.module-b89bd8f3.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/hooks.module-c67397a1.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/preact.module-fd3c1bec.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/wouter-preact.js": {
+      "bytes": 7904,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/preact.module-fd3c1bec.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/hooks.module-c67397a1.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/preact/compat.js": {
+      "bytes": 207,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/compat.module-b89bd8f3.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/hooks.module-c67397a1.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/preact.module-fd3c1bec.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/react-icons/gr.js": {
+      "bytes": 3161,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/compat.module-b89bd8f3.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/hooks.module-c67397a1.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/preact.module-fd3c1bec.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/Input.js": {
+      "bytes": 274,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/preact.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/styles/form.css": {
+      "bytes": 1177,
+      "imports": []
+    },
+    "dist/components/Form.js": {
+      "bytes": 997,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/preact/compat.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-icons/gr.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/storeon/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Input.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/styles/form.css",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/Bookmarks/useSelectSitesByTag.js": {
+      "bytes": 358,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/storeon/preact.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/Bookmarks/SiteList.js": {
+      "bytes": 972,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/preact/compat.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-icons/gr.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/storeon/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Bookmarks/useSelectSitesByTag.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/styles/toast.css": {
+      "bytes": 71,
+      "imports": []
+    },
+    "dist/components/Toast.js": {
+      "bytes": 955,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/preact/compat.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-toastify.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/wouter-preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-toastify/dist/ReactToastify.css",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/styles/toast.css",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/Bookmarks/TagContainer.js": {
+      "bytes": 1413,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/preact/compat.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-icons/gr.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-toastify.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/storeon/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/wouter-preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Form.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Toast.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/styles/bookmarks.css": {
+      "bytes": 1622,
+      "imports": []
+    },
+    "dist/components/Bookmarks/Bookmarks.js": {
+      "bytes": 809,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/preact/compat.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Form.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Bookmarks/SiteList.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Bookmarks/TagContainer.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/styles/bookmarks.css",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/styles/navlink.css": {
+      "bytes": 286,
+      "imports": []
+    },
+    "dist/components/NavLink.js": {
+      "bytes": 392,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/wouter-preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/styles/navlink.css",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/styles/header.css": {
+      "bytes": 389,
+      "imports": []
+    },
+    "dist/components/Header.js": {
+      "bytes": 417,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/storeon/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/NavLink.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/styles/header.css",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/Search.js": {
+      "bytes": 290,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/preact.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/TagRoute.js": {
+      "bytes": 483,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/storeon/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/wouter-preact.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/App.js": {
+      "bytes": 706,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-toastify.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/wouter-preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Bookmarks/Bookmarks.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Header.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Search.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/TagRoute.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/@storeon/localstorage.js": {
+      "bytes": 1792,
+      "imports": []
+    },
+    "_snowpack/pkg/storeon.js": {
+      "bytes": 952,
+      "imports": []
+    },
+    "dist/store/init.js": {
+      "bytes": 342,
+      "imports": []
+    },
+    "dist/store/main.js": {
+      "bytes": 1216,
+      "imports": [
+        {
+          "path": "dist/store/init.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/store/index.js": {
+      "bytes": 266,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/@storeon/localstorage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/storeon.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/store/main.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/index.js": {
+      "bytes": 415,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/storeon/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-toastify/dist/ReactToastify.css",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/styles/tailwind.css",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/App.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/store/index.js",
+          "kind": "import-statement"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "../~~bundle~~/dist/index.js": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "_snowpack/pkg/common/preact.module-fd3c1bec.js": {
+          "bytesInOutput": 9892
+        },
+        "_snowpack/pkg/preact.js": {
+          "bytesInOutput": 0
+        },
+        "_snowpack/pkg/common/hooks.module-c67397a1.js": {
+          "bytesInOutput": 2280
+        },
+        "_snowpack/pkg/common/compat.module-b89bd8f3.js": {
+          "bytesInOutput": 7646
+        },
+        "_snowpack/pkg/storeon/preact.js": {
+          "bytesInOutput": 256
+        },
+        "_snowpack/pkg/react-toastify/dist/ReactToastify.css": {
+          "bytesInOutput": 0
+        },
+        "dist/styles/tailwind.css": {
+          "bytesInOutput": 0
+        },
+        "_snowpack/pkg/react-toastify.js": {
+          "bytesInOutput": 14611
+        },
+        "_snowpack/pkg/wouter-preact.js": {
+          "bytesInOutput": 2125
+        },
+        "_snowpack/pkg/preact/compat.js": {
+          "bytesInOutput": 0
+        },
+        "_snowpack/pkg/react-icons/gr.js": {
+          "bytesInOutput": 1742
+        },
+        "dist/components/Input.js": {
+          "bytesInOutput": 156
+        },
+        "dist/styles/form.css": {
+          "bytesInOutput": 0
+        },
+        "dist/components/Form.js": {
+          "bytesInOutput": 357
+        },
+        "dist/components/Bookmarks/useSelectSitesByTag.js": {
+          "bytesInOutput": 128
+        },
+        "dist/components/Bookmarks/SiteList.js": {
+          "bytesInOutput": 361
+        },
+        "dist/styles/toast.css": {
+          "bytesInOutput": 0
+        },
+        "dist/components/Toast.js": {
+          "bytesInOutput": 301
+        },
+        "dist/components/Bookmarks/TagContainer.js": {
+          "bytesInOutput": 444
+        },
+        "dist/styles/bookmarks.css": {
+          "bytesInOutput": 0
+        },
+        "dist/components/Bookmarks/Bookmarks.js": {
+          "bytesInOutput": 245
+        },
+        "dist/styles/navlink.css": {
+          "bytesInOutput": 0
+        },
+        "dist/components/NavLink.js": {
+          "bytesInOutput": 125
+        },
+        "dist/styles/header.css": {
+          "bytesInOutput": 0
+        },
+        "dist/components/Header.js": {
+          "bytesInOutput": 113
+        },
+        "dist/components/TagRoute.js": {
+          "bytesInOutput": 144
+        },
+        "dist/App.js": {
+          "bytesInOutput": 119
+        },
+        "_snowpack/pkg/@storeon/localstorage.js": {
+          "bytesInOutput": 558
+        },
+        "_snowpack/pkg/storeon.js": {
+          "bytesInOutput": 392
+        },
+        "dist/store/init.js": {
+          "bytesInOutput": 219
+        },
+        "dist/store/main.js": {
+          "bytesInOutput": 580
+        },
+        "dist/store/index.js": {
+          "bytesInOutput": 43
+        },
+        "dist/index.js": {
+          "bytesInOutput": 72
+        }
+      },
+      "bytes": 42930
+    },
+    "../~~bundle~~/dist/index.css": {
+      "imports": [],
+      "inputs": {
+        "_snowpack/pkg/react-toastify/dist/ReactToastify.css": {
+          "bytesInOutput": 8069
+        },
+        "dist/styles/tailwind.css": {
+          "bytesInOutput": 4238
+        },
+        "dist/styles/bookmarks.css": {
+          "bytesInOutput": 1304
+        },
+        "dist/styles/header.css": {
+          "bytesInOutput": 310
+        },
+        "dist/styles/form.css": {
+          "bytesInOutput": 999
+        },
+        "dist/styles/navlink.css": {
+          "bytesInOutput": 243
+        },
+        "dist/styles/toast.css": {
+          "bytesInOutput": 62
+        }
+      },
+      "bytes": 15226
+    }
+  }
+}
