@@ -13,5 +13,5 @@
     "minify": true,
     "target": "es2017"
   },
-  "plugins": ["@prefresh/snowpack", "@snowpack/plugin-postcss"]
+  "plugins": ["@prefresh/snowpack", "@snowpack/plugin-postcss", "@snowpack/plugin-dotenv"]
 }
