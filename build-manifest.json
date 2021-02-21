@@ -1,5 +1,9 @@
 {
   "inputs": {
+    "_snowpack/env.js": {
+      "bytes": 151,
+      "imports": []
+    },
     "_snowpack/pkg/common/preact.module-fd3c1bec.js": {
       "bytes": 9881,
       "imports": []
@@ -52,6 +56,19 @@
         }
       ]
     },
+    "_snowpack/pkg/wouter-preact.js": {
+      "bytes": 8387,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/preact.module-fd3c1bec.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/hooks.module-c67397a1.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
     "_snowpack/pkg/react-toastify/dist/ReactToastify.css": {
       "bytes": 10241,
       "imports": []
@@ -73,19 +90,6 @@
         },
         {
           "path": "_snowpack/pkg/common/preact.module-fd3c1bec.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
-    "_snowpack/pkg/wouter-preact.js": {
-      "bytes": 7904,
-      "imports": [
-        {
-          "path": "_snowpack/pkg/common/preact.module-fd3c1bec.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "_snowpack/pkg/common/hooks.module-c67397a1.js",
           "kind": "import-statement"
         }
       ]
@@ -376,7 +380,7 @@
       ]
     },
     "dist/App.js": {
-      "bytes": 706,
+      "bytes": 702,
       "imports": [
         {
           "path": "_snowpack/pkg/preact.js",
@@ -447,14 +451,22 @@
       ]
     },
     "dist/index.js": {
-      "bytes": 415,
+      "bytes": 656,
       "imports": [
+        {
+          "path": "_snowpack/env.js",
+          "kind": "import-statement"
+        },
         {
           "path": "_snowpack/pkg/preact.js",
           "kind": "import-statement"
         },
         {
           "path": "_snowpack/pkg/storeon/preact.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/wouter-preact.js",
           "kind": "import-statement"
         },
         {
@@ -481,6 +493,9 @@
       "imports": [],
       "exports": [],
       "inputs": {
+        "_snowpack/env.js": {
+          "bytesInOutput": 148
+        },
         "_snowpack/pkg/common/preact.module-fd3c1bec.js": {
           "bytesInOutput": 9892
         },
@@ -496,6 +511,9 @@
         "_snowpack/pkg/storeon/preact.js": {
           "bytesInOutput": 256
         },
+        "_snowpack/pkg/wouter-preact.js": {
+          "bytesInOutput": 2230
+        },
         "_snowpack/pkg/react-toastify/dist/ReactToastify.css": {
           "bytesInOutput": 0
         },
@@ -504,9 +522,6 @@
         },
         "_snowpack/pkg/react-toastify.js": {
           "bytesInOutput": 14611
-        },
-        "_snowpack/pkg/wouter-preact.js": {
-          "bytesInOutput": 2125
         },
         "_snowpack/pkg/preact/compat.js": {
           "bytesInOutput": 0
@@ -560,7 +575,7 @@
           "bytesInOutput": 144
         },
         "dist/App.js": {
-          "bytesInOutput": 119
+          "bytesInOutput": 110
         },
         "_snowpack/pkg/@storeon/localstorage.js": {
           "bytesInOutput": 558
@@ -578,10 +593,10 @@
           "bytesInOutput": 43
         },
         "dist/index.js": {
-          "bytesInOutput": 72
+          "bytesInOutput": 129
         }
       },
-      "bytes": 42930
+      "bytes": 43324
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
