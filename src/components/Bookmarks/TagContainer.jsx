@@ -12,8 +12,7 @@ const tagsAddPatern = (value) => value;
 
 export default function TagContainer({ tag }) {
   const { dispatch } = useStoreon();
-  // eslint-disable-next-line no-unused-vars
-  const [_, setLocation] = useLocation();
+  const [, setLocation] = useLocation();
 
   const handleDel = useCallback(() => {
     dispatch('tags/del', tag);
